@@ -16,7 +16,7 @@ env:
   - SLIMERJSLAUNCHER=$(which firefox) DISPLAY=:99.0 PATH=$TRAVIS_BUILD_DIR/slimerjs:$PATH
 
 before_install:
-  - curl -OL http://raw.github.com/att/rcloud/develop/scripts/travis-tool.sh
+  - curl -OL http://raw.github.com/RCloudatt/rcloud/develop/scripts/travis-tool.sh
   - chmod 755 ./travis-tool.sh
   - ./travis-tool.sh bootstrap
   - ./travis-tool.sh aptget_install libxt-dev libcurl4-openssl-dev libcairo2-dev libreadline-dev git redis-server
